@@ -742,10 +742,10 @@ impl Emitter {
             // dummy space for implicit type
             self.space(1);
         }
-        if self.in_direction_with_var {
-            self.str("var");
-            self.space(1);
-        }
+        // if self.in_direction_with_var {
+        //     self.str("var");
+        //     self.space(1);
+        // }
         for x in &arg.scalar_type_list {
             self.type_modifier(&x.type_modifier);
         }
